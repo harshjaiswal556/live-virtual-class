@@ -190,6 +190,7 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+  padding-top: 5rem;
 }
 
 .footer-content {
@@ -280,8 +281,6 @@ ul.social-buttons {
   margin-bottom: 0;
 }
 
-ul.social-buttons li a:active,
-ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: #fec503;
 }

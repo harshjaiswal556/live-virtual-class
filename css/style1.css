@@ -68,6 +68,11 @@ nav {
   justify-content: center;
 }
 
+.welcome .right{
+  display: flex;
+  justify-content: end;
+}
+
 .left, .right {
     flex: 1 1 45%;
     margin: 10px;
@@ -226,53 +231,61 @@ footer {
       width: 0
     }
   }
-
-@media screen and (max-width: 875px) {
-    .left, .right {
-        flex: 1 1 100%;
-        text-align: center;
+  @media screen and (max-width: 900px) {
+    .left, .right{
+      flex: 1 1 100%;
+    }
+    .welcome .right {
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .nav-menu {
-      flex-direction: column;
-      gap: 10px;
-  }
+    nav {
+        padding: 1rem !important;
+    }
 
-  nav{
-    padding: 1rem !important;
-  }
+    .nav-menu-link a {
+        font-size: 1rem;
+    }
 
-  .nav-menu-link a {
-      font-size: 1rem;
-  }
-  .welcome, .about{
-    padding: 1rem 1rem 0rem 1rem;
-  }
+    .welcome,
+    .about {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+
+    .welcome .right {
+        width: 100%;
+    }
+
     .welcome .right img{
-      width: 100%;
+      max-width: 90%;
     }
 
-    .left h1{
-      font-size: 40px;
-  }
-  
-  .left h3 {
-      margin: 15px 0px;
-      font-size: 25px;
-  }
+    .left h1 {
+        font-size: 40px;
+    }
 
-  .about-head h1{
-    font-size: 32px;
-  }
+    .left h3 {
+        margin: 15px 0px;
+        font-size: 25px;
+    }
 
-  .about-head{
-    padding: 5rem 1rem 1rem 1rem;
-  }
+    .about-head h1 {
+        font-size: 32px;
+    }
 
+    .about-head {
+        padding: 5rem 1rem 1rem 1rem;
+    }
 }
+
 
 
 a {
@@ -333,8 +346,6 @@ ul.social-buttons {
   margin-bottom: 0;
 }
 
-ul.social-buttons li a:active,
-ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: #fec503;
 }
