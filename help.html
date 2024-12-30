@@ -66,6 +66,28 @@
   </header>
 
   <div class="container mt-3">
+    <article class="search d-flex justify-content-center row">
+      <div class="mb-3">
+        <h3 class="text-center">Search your queries in your desired search engine</h3>
+      </div>
+      <form class="d-flex col-md-8 gap-3 mb-3" role="search" name="search_form">
+        <select class="form-select" aria-label="Default select example" name="site" id="search">
+          <option value="http://search.yahoo.com/bin/search?p=">Yahoo</option>
+          <option value="http://www.go.com/Titles?qt=">Go.com</option>
+          <option value="http://www.goto.com/d/search/?Keywords=">GoTo.com</option>
+          <option value="https://search.excite.com/serp?q=">Excite</option>
+          <option value="http://www.lycos.com/srch/?query=">Lycos</option>
+          <option value="http://hotbot.lycos.com/?MT=">HotBot</option>
+          <option value="http://www.altavista.com/cgi-bin/query?&q=">Alta Vista</option>
+          <option value="http://www.webcrawler.com/cgi-bin/WebQuery?searchText=">WebCrawler</option>
+          <option value="http://www.mamma.com/Mamma?&query=">Mamma.com</option>
+          <option value="http://search.aol.com/dirsearch.adp?query=">AOL.com</option>
+          <option value="http://search.msn.com/results.asp?q=">MSN.com</option>
+        </select>
+        <input class="form-control" type="search" placeholder="Search" name="u_search" aria-label="Search">
+        <button class="btn" type="button" onClick="search_site()">Search</button>
+      </form>
+    </article>
     <div class="row">
       <div class="col-md-2 left-div p-3">
         <div class="custom-left-div">
@@ -243,10 +265,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script>
+    <script src="./js/help-js.js"></script>
+  <!-- <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-  </script>
+  </script> -->
 </body>
 
 </html>
