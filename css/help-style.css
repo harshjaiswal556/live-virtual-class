@@ -48,6 +48,10 @@ nav {
     background-color: #00658a;
 }
 
+/* .container{
+  margin: 5rem;
+} */
+
 .help-head {
     margin-top: 8rem;
     display: flex;
@@ -147,6 +151,27 @@ footer {
       flex: 1 1 100%;
       text-align: center;
   }
+}
+
+@media screen and (max-width: 750px){
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav {
+    padding: 1rem !important;
+}
+
+.nav-menu-link a {
+    font-size: 1rem;
+}
+.row{
+  padding: 1rem;
+}
+/* .faq{
+  margin: 0rem 1rem;
+} */
 }
 
 @media screen and (max-width: 500px) {

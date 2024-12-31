@@ -280,6 +280,21 @@ a:hover {
       text-align: left;
     }
   }
+
+  @media screen and (max-width: 750px){
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  nav {
+      padding: 1rem !important;
+  }
+  
+  .nav-menu-link a {
+      font-size: 1rem;
+  }
+  }
   
 ul.social-buttons {
   margin-bottom: 0;

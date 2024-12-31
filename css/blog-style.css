@@ -178,6 +178,27 @@ footer {
     }
 }
 
+@media screen and (max-width: 750px){
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav {
+    padding: 1rem !important;
+}
+
+.nav-menu-link a {
+    font-size: 1rem;
+}
+/* .row{
+  padding: 1rem;
+} */
+/* .faq{
+  margin: 0rem 1rem;
+} */
+}
+
 a {
   color: #6c757d;
 }
