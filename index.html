@@ -70,10 +70,33 @@
         </div>
     </nav>
 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Your Name</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <input type="text" id="name" name="name" class="form-control">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="save()" >Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <header>
         <section class="main">
         <article class="welcome">
             <section class="left">
+              <h1 id="user-name"></h1>
                 <h1>Welcome To LVC!!!</h1>
                 <h3>Empowering learners with innovative, interactive, and personalized education.</h3>
                 <div class="buttons mt-3">
@@ -242,12 +265,7 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 
-    <script>
-        // Initialization for ES Users
-        import { Carousel, initMDB } from "mdb-ui-kit";
-
-        initMDB({ Carousel });
-    </script>
+    <script src="./js/index-js.js"></script>
 </body>
 
 </html>
