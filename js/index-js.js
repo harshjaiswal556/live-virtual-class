@@ -12,4 +12,5 @@ if(localStorage.getItem("name")===null){
 function save(){
     var name = document.getElementById("name").value;
     localStorage.setItem("name", name);
+    document.getElementById("user-name").innerText = "Hi "+localStorage.getItem("name")
 }
